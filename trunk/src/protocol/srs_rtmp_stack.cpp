@@ -1596,7 +1596,7 @@ void SrsRequest::strip()
     // remove the unsupported chars in names.
     host = srs_string_remove(host, "/ \n\r\t");
     vhost = srs_string_remove(vhost, "/ \n\r\t");
-    app = srs_string_remove(app, " \n\r\t");
+    app = srs_string_remove(app, "/ \n\r\t");
     stream = srs_string_remove(stream, " \n\r\t");
     
     // remove end slash of app/stream
